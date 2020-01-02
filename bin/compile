@@ -42,7 +42,6 @@ export LD_LIBRARY_PATH=$CACHE_DIR/$PYTHON_VERSION/lib
 puts-step "Ensure pip"
 python -m ensurepip --upgrade | indent
 python -m pip install setuptools==42.0.1 | indent
-python -m pip install --upgrade pip | indent
 
 cd $BUILD_DIR
 
